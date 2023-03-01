@@ -1,0 +1,19 @@
+name: 'Deploy JS app to AWS S3 using container'
+description: 'Deploy JS static webapp to AWS S3 using container for deployment'
+inputs:
+  bucket:
+    description: 'AWS S3 bucket name'
+    required: true
+  bucket-region:
+    description: 'AWS S3 Bucket region'
+    required: false
+    default: 'eu-west-1'
+  dist-folder:
+    description: 'The foldet containing deployable files'
+    required: true
+outputs:
+  website-url:
+    description: 'The URL of the deployed website'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
