@@ -1,0 +1,7 @@
+name: 'Deploy JS app to AWS S3'
+description: 'Deploy JS static webapp to AWS S3'
+# inputs:
+# outputs:
+runs:
+  using: 'node16'
+  main: 'main.js'
