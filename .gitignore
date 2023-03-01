@@ -7,10 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Note: only top-level node_modules will be ignored.
-# For custom JS actions, node_modules must be included
+# Note: only top-level node_modules & dist will be ignored.
+# For custom JS actions, node_modules & dist under it must be included
 /node_modules
-dist
+/dist
 dist-ssr
 *.local
 
